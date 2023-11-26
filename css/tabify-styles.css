@@ -1,0 +1,82 @@
+body {
+    background-color: #222;
+    font-family: sans-serif;
+    line-height: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.tabify-container {
+    padding: 1rem;
+    margin: 1rem auto;
+    /* border: 3px dashed cyan; */
+    height: 630px;
+    font-family: monospace;
+}
+
+.tabify-ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    font-size: 1.1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.tabify-ul li {
+    display: flex;
+    align-items: center;
+    height: 1.75rem;
+    padding: 12px;
+    margin: 1px;
+    color: #445;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #888;
+}
+
+.tabify-ul button {
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    color: #445;
+}
+
+.tabify-div {
+    left: -15px;
+    top: -25px;
+    position: relative;
+    height: 420px;
+    padding: 40px;
+    margin: 20px auto;
+    overflow-y: scroll;
+}
+
+.tabify-div div {
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 10px;
+    padding: 24px 48px;
+    color: #333;
+    text-align: left;
+    height: 500px; 
+    overflow: hidden;
+    font-size: 1.1rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    min-width: 600px;
+    /* background-color: #fff; */
+}
+
+.tabify-ul button:hover, .btn-hilite {
+    filter: saturate(2);
+}
