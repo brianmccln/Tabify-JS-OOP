@@ -8,7 +8,7 @@
     <link href="css/tabify-styles.css" rel="stylesheet">
 ```
 
-- In your html page, for versions v.1.5 and above add this **ul** tag wherever you want the tabbed panel group to appear. All the contents will be generated dynamically from the **tabify-data.js** file:
+- In your html page, for versions v.1.5 and above add this code snippet wherever you want the tabbed panel group to appear. The data will be supplied by the **tabify-data.js** file, which will be used by the tabify js file to render the tabbed panels.
 ```js
     <div class="tabify-container">
         <ul class="tabify-ul"></ul>
@@ -30,7 +30,7 @@
     </ul>
 ```
 
-- In v.1.0, inside the "tabify-div" div, add child divs, one per tab. These need to go in the same order as the tabbed buttons. So, the div with the Balderdash content would go first. Inside these divs, but whatever content you want. In the v.1.0 demo, the contents of each panel div is just a paragraph or two of hipster ipsum text.
+- In v.1.0, the "tabify-div" div comes with child divs, one per tab. These must  go in the same order as the tabbed buttons they pertain to. So, the div with the Balderdash content would go first, since that button is first in the ul. Inside the "tabify-div" child divs, put whatever content you want. In the v.1.0 demo, the contents of each panel div is just an h3 followed by paragraph or two of hipster ipsum text.
 
 - Import the js file(s) at the end of the body.  
 The different imports are shown below for each of the four versions:
