@@ -51,10 +51,10 @@ body {
     left: -15px;
     top: -25px;
     position: relative;
-    height: 420px;
+    min-height: 420px;
     padding: 40px;
     margin: 20px auto;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .tabify-div div {
@@ -65,8 +65,7 @@ body {
     padding: 24px 48px;
     color: #333;
     text-align: left;
-    height: 500px; 
-    overflow: hidden;
+    min-height: 500px; 
     font-size: 1.1rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -74,7 +73,6 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     min-width: 600px;
-    /* background-color: #fff; */
 }
 
 .tabify-ul button:hover, .btn-hilite {
